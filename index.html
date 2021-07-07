@@ -2,28 +2,100 @@
 <html>
         <head>
             <title> Kate's ALL ABOUT ME</title>
+            <style>
+                body {
+                    background: rgb(125, 198, 205);
+                    color: rgb(45, 45, 45);
+                    padding: 10px;
+                    font-family: fantasy;
+                }
+                #all-contents {
+                    max-width: 800px;
+                    margin: auto;
+                }
+            
+                /* navigation menu */
+                nav {
+                    background: rgb(161,3,252);
+                    margin: 0 auto; 
+                    margin-bottom:20px;
+                    display: flex;
+                    padding: 10px;
+                    border-radius: 
+                }
+                h1 {
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    flex: 1;
+                    margin: 0;
+                    text-decoration:underline overline dotted
+                }
+                #nav-ul {
+                    list-style-image: none;
+                }
+                .nav-li {
+                    display: inline-block;
+                    padding: 0 10px;
+                }
+                a {
+                    text-decoration: underline overline wavy blue;
+                    color: #fff;
+                }
+            
+                /* main container area beneath menu */
+                main {
+                    background: rgb(221, 220, 218);
+                    display: flex;
+                }
+                .sidebar {
+                    margin-right: 25px;
+                    padding: 10px;
+                }
+                .sidebar-img {
+                    width: 200px;
+                }
+                .content {
+                    flex: 1;
+                    padding: 15px;
+                }
+                #interests {
+                    border: 4px rgb(10, 241, 107) ridge;
+                    padding: 8px;
+                }
+                h2, h3 {
+                    margin: 0px;
+                }
+            </style>
         </head>
         <body>
             <!--ALL content goes here -->
-            <div>
-                <nav>
-
+            <div id="all-contents">
+                <nav> 
+                    <h1> Hi! I'm Kate</h1>
+                    <ul id="nav-ul">
+                        <li class="nav-li"> 
+                            <a href="index.html"> Home</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="portfolio.html"> Portfolio </a>
+                        </li>
+                    </ul>
                 </nav>
                 <main>
                    <!--Sidebar section--> 
                    <div>
-                <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-0/c34.0.206.206a/p296x100/172059138_10208582157068984_1617858096954528440_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=da31f3&_nc_ohc=qxoxQkOxw2sAX9SaKHJ&_nc_ht=scontent-dfw5-2.xx&tp=27&oh=5abb7a5128ef0560370ec5edd47ddac4&oe=60E8CBBA"
+                <img class="sidebar-img" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-0/c34.0.206.206a/p296x100/172059138_10208582157068984_1617858096954528440_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=da31f3&_nc_ohc=qxoxQkOxw2sAX9SaKHJ&_nc_ht=scontent-dfw5-2.xx&tp=27&oh=5abb7a5128ef0560370ec5edd47ddac4&oe=60E8CBBA"
 
                    </div>
 
                    <!--Content section -->
-                   <div> 
+                   <div class="content"> 
                        <h2> Kate McGuire </h2>
-                       <p> Science Teacher 
-                           South Plaquemines High School 
-                       </p>
+                       <p> Biological Sciences Teacher </p>
+                       <p>South Plaquemines High School</p>
                        <!-- Interests Section-->
-                       <div> 
+                       <div id="interests"> 
                            <h3>Interests</h3>
                            <ul>
                                <li>Animals</li>
