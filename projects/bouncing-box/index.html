@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: rgb(213, 221, 231);
 			font-size: 300%;
 			text-align: center;
 			display: block;
@@ -17,6 +17,8 @@
 			left: 0px;  /* <--- Change me! */
 		}
 		.board{
+			background-image: url(https://my.alfred.edu/zoom/_images/foster-lake.jpg);
+ 			background-color: #cccccc;
 			height: 100vh;
 		}
 	</style>
@@ -64,6 +66,7 @@
 			var positionX = 0;
 			var points = 0;
 			var speed = 10;
+			var randNum = Math.random() * 100;
 
 			
 			/* 
@@ -92,7 +95,7 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				positionX = 0;
+				positionX = randNum;
 				points = points + 1;
 				changeBoxText(points);
 				
